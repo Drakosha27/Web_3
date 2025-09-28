@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Assignment 3 — Flexbox & Grid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Part 1. Task 0: Flexbox Navigation Bar -->
+  <header class="site-header">
+    <div class="logo">MyLogo</div>
+    <nav class="nav">
+      <a href="#cards">Cards</a>
+      <a href="#layout">Grid Layout</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#portfolio">Portfolio</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Part 1. Task 1: Card Row (Flex) -->
+    <section id="cards" class="section">
+      <h2>Card Row (Flexbox)</h2>
+      <div class="card-row">
+        <article class="card">
+          <img src="https://i.pinimg.com/736x/9c/f4/6b/9cf46b00aea31d11191503d466a4b7f1.jpg" alt="Card 1" />
+          <h3>Card One</h3>
+          <p>Simple text for the first card. Equal height via flex + min-height.</p>
+          <button>Read more</button>
+        </article>
+        <article class="card">
+          <img src="https://i.pinimg.com/1200x/dc/81/2c/dc812c2d37f5ef97884cb4e1e627addd.jpg" alt="Card 2" />
+          <h3>Card Two</h3>
+          <p>Second card. The layout keeps equal heights and gaps.</p>
+          <button>Read more</button>
+        </article>
+        <article class="card">
+          <img src="https://i.pinimg.com/originals/6d/c0/2d/6dc02de40ed24e0571ca746409928f0f.gif" alt="Card 3" />
+          <h3>Card Three</h3>
+          <p>Third card with hover shadow/lift effect.</p>
+          <button>Read more</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Part 2. Task 2: Page Layout with Grid Areas -->
+    <section id="layout" class="section">
+      <h2>Grid Page Layout (Grid Areas)</h2>
+      <div class="grid-page">
+        <header class="g-header">Header</header>
+        <aside class="g-sidebar">Sidebar (left)</aside>
+        <article class="g-main">Main content (right)</article>
+        <footer class="g-footer">Footer</footer>
+      </div>
+    </section>
+
+    <!-- Part 2. Task 3: Image Gallery (Grid) -->
+    <section id="gallery" class="section">
+      <h2>Image Gallery (Grid)</h2>
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img src="https://i.pinimg.com/1200x/57/d9/01/57d901c3f85f856457da2f58b8c00109.jpg" alt="g1" />
+          <figcaption>Caption 1</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://i.pinimg.com/736x/58/34/30/58343084672050d45aa757caca4970e3.jpg" alt="g2" />
+          <figcaption>Caption 2</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://i.pinimg.com/1200x/72/b3/33/72b3331f95ed6f250dd0d4ef9719722c.jpg" alt="g3" />
+          <figcaption>Caption 3</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://i.pinimg.com/736x/f4/a8/c7/f4a8c70ddd212745250597f5bedc098c.jpg" alt="g4" />
+          <figcaption>Caption 4</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://i.pinimg.com/1200x/f0/93/53/f09353ea441a92997606810a61bf0ef9.jpg" alt="g5" />
+          <figcaption>Caption 5</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://i.pinimg.com/736x/ae/1a/83/ae1a83b23422e4f5cd3801dff83f98b4.jpg" alt="g6" />
+          <figcaption>Caption 6</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://i.pinimg.com/736x/de/90/00/de9000dc1b303334bd3064433c048fd2.jpg" alt="g7" />
+          <figcaption>Caption 7</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://i.pinimg.com/1200x/7d/7c/fd/7d7cfdf0249049eb3b287a8aab0fe870.jpg" alt="g8" />
+          <figcaption>Caption 8</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://i.pinimg.com/736x/b3/e7/d6/b3e7d6fe9e28686b1a8d4ecdcf9b8bd5.jpg" alt="g9" />
+          <figcaption>Caption 9</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Part 3. Task 4: Portfolio (Flex in header, Grid in main, Flex inside card) -->
+    <section id="portfolio" class="section">
+      <h2>Portfolio Page (Flex + Grid)</h2>
+
+      <!-- header already Flex. Now main as grid -->
+      <div class="portfolio-grid">
+        <div class="projects">
+          <!-- project card 1 -->
+          <article class="project-card">
+            <img src="https://i.pinimg.com/736x/a2/3e/8e/a23e8eda5ba05f5a88268621ed7ff5c8.jpg" alt="Project 1" />
+            <div class="project-body">
+              <h3>Project One</h3>
+              <p>Short description. Content inside uses Flex to align elements.</p>
+              <div class="project-actions">
+                <button>Open</button>
+              </div>
+            </div>
+          </article>
+          <!-- project card 2 -->
+          <article class="project-card">
+            <img src="https://i.pinimg.com/736x/00/3f/5d/003f5db12418b1aae8c67639eab21aa8.jpg" alt="Project 2" />
+            <div class="project-body">
+              <h3>Project Two</h3>
+              <p>Another project. Same structure and spacing.</p>
+              <div class="project-actions">
+                <button>Open</button>
+              </div>
+            </div>
+          </article>
+          <!-- project card 3 -->
+          <article class="project-card">
+            <img src="https://i.pinimg.com/736x/a7/b4/e1/a7b4e1b69689acf14c54ee31d0935315.jpg" alt="Project 3" />
+            <div class="project-body">
+              <h3>Project Three</h3>
+              <p>Keep it simple and consistent.</p>
+              <div class="project-actions">
+                <button>Open</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <aside class="portfolio-aside">
+          <h3>About Me</h3>
+          <p>Basic info, links, contacts.</p>
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Email</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2025 — Footer spans bottom</footer>
+</body>
+</html>
